@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miguel Angel Tejada | Python · AI Agents · Cybersecurity</title>
+    <meta name="description" content="Portafolio profesional de Miguel Angel Tejada. Desarrollador Python especializado en agentes de IA, AppSec, RAG y automatización. Objetivo: CISO.">
+    <meta name="keywords" content="Miguel Tejada, Python, IA, Agentes, Ciberseguridad, AppSec, RAG, Freelance, CISO">
+    <meta property="og:title" content="Miguel Angel Tejada | AI & Cybersecurity">
+    <meta property="og:description" content="Desarrollador Python | Agentes IA · AppSec · Automatización">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐍</text></svg>">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0ea5e9',
+                        dark: '#0f172a',
+                        accent: '#22c55e'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', system_ui, sans-serif; }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-6px); box-shadow: 0 20px 40px -12px rgba(14, 165, 233, 0.3); }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full bg-slate-950/80 backdrop-blur-md border-b border-slate-800 z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <a href="#" class="text-xl font-bold tracking-tight">Miguel<span class="text-primary">.dev</span></a>
+                <div class="hidden md:flex space-x-8 text-sm font-medium">
+                    <a href="#sobre-mi" class="hover:text-primary transition">Sobre mí</a>
+                    <a href="#proyectos" class="hover:text-primary transition">Proyectos</a>
+                    <a href="#casos" class="hover:text-primary transition">Casos</a>
+                    <a href="#stack" class="hover:text-primary transition">Stack</a>
+                    <a href="#contacto" class="hover:text-primary transition">Contacto</a>
+                </div>
+                <a href="https://github.com/Migueltejada86" target="_blank" class="text-sm bg-primary hover:bg-sky-600 px-4 py-2 rounded-lg font-medium transition">GitHub</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="pt-32 pb-20 px-4">
+        <div class="max-w-6xl mx-auto text-center">
+            <p class="text-primary font-medium mb-4 tracking-widest uppercase text-sm">Python · AI Agents · Cybersecurity</p>
+            <h1 class="text-5xl md:text-7xl font-bold tracking-tight mb-6">
+                Miguel Angel<br><span class="text-primary">Tejada</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-slate-400 max-w-3xl mx-auto mb-10 leading-relaxed">
+                Desarrollador Python enfocado en agentes de IA, pipelines de AppSec y automatización. 
+                Construyo sistemas que detectan, explican y corrigen vulnerabilidades de forma autónoma.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#proyectos" class="bg-primary hover:bg-sky-600 px-8 py-4 rounded-xl font-semibold transition">Ver proyectos</a>
+                <a href="#contacto" class="border border-slate-700 hover:border-primary px-8 py-4 rounded-xl font-semibold transition">Contactar</a>
+            </div>
+            <div class="mt-12 flex justify-center gap-6 text-sm text-slate-500">
+                <span>📍 Alta Gracia, Córdoba, Argentina</span>
+                <span>•</span>
+                <span>Disponible para freelance</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre mí -->
+    <section id="sobre-mi" class="py-20 px-4 bg-slate-900/50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">Sobre mí</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <p class="text-lg text-slate-300 leading-relaxed mb-6">
+                        Soy desarrollador Python autodidacta con foco en Inteligencia Artificial aplicada, agentes multi-agente y ciberseguridad. 
+                        Me especializo en construir pipelines que combinan SAST, LLMs y automatización para resolver problemas reales de seguridad y productividad.
+                    </p>
+                    <p class="text-lg text-slate-300 leading-relaxed mb-6">
+                        Trabajo tanto en productos para comercios locales (landing + auth + Postgres) como en herramientas de AppSec y orquestadores de agentes. 
+                        Mi objetivo a mediano/largo plazo es evolucionar hacia roles de CISO, combinando visión técnica profunda con criterio de riesgo y producto.
+                    </p>
+                    <div class="flex flex-wrap gap-3 mt-8">
+                        <span class="bg-slate-800 px-4 py-2 rounded-full text-sm">Python</span>
+                        <span class="bg-slate-800 px-4 py-2 rounded-full text-sm">LangChain / CrewAI</span>
+                        <span class="bg-slate-800 px-4 py-2 rounded-full text-sm">Semgrep + OWASP</span>
+                        <span class="bg-slate-800 px-4 py-2 rounded-full text-sm">RAG</span>
+                        <span class="bg-slate-800 px-4 py-2 rounded-full text-sm">AppSec</span>
+                    </div>
+                </div>
+                <div class="bg-slate-800/50 border border-slate-700 rounded-2xl p-8">
+                    <h3 class="text-xl font-semibold mb-4">Enfoque actual</h3>
+                    <ul class="space-y-3 text-slate-300">
+                        <li class="flex items-start"><span class="text-primary mr-3">▸</span> Pipelines multi-agente de AppSec (detección → explicación → parche)</li>
+                        <li class="flex items-start"><span class="text-primary mr-3">▸</span> Orquestadores de agentes para labs de ciberseguridad</li>
+                        <li class="flex items-start"><span class="text-primary mr-3">▸</span> Productos reales: landing + fidelización + auth</li>
+                        <li class="flex items-start"><span class="text-primary mr-3">▸</span> Documentación pensada para portafolio y reclutadores</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center">Proyectos</h2>
+            <p class="text-center text-slate-400 mb-12">Selección de trabajos con enfoque en IA, seguridad y productos reales.</p>
+            
+            <div class="flex justify-center gap-3 mb-10 flex-wrap">
+                <button onclick="filterProjects('all')" class="filter-btn px-5 py-2 rounded-full bg-primary text-white text-sm font-medium">Todos</button>
+                <button onclick="filterProjects('cyber')" class="filter-btn px-5 py-2 rounded-full bg-slate-800 text-slate-300 text-sm font-medium hover:bg-slate-700">Cybersecurity</button>
+                <button onclick="filterProjects('ai')" class="filter-btn px-5 py-2 rounded-full bg-slate-800 text-slate-300 text-sm font-medium hover:bg-slate-700">IA / Agentes</button>
+                <button onclick="filterProjects('web')" class="filter-btn px-5 py-2 rounded-full bg-slate-800 text-slate-300 text-sm font-medium hover:bg-slate-700">Web / Producto</button>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" id="projects-grid">
+                <!-- Vulpy -->
+                <article class="project-card cyber card-hover bg-slate-900 border border-slate-800 rounded-2xl p-6" data-category="cyber">
+                    <div class="text-xs font-semibold text-primary mb-3">APPSEC · MULTI-AGENTE</div>
+                    <h3 class="text-xl font-bold mb-3">Vulpy</h3>
+                    <p class="text-slate-400 text-sm mb-6 leading-relaxed">De alertas de Semgrep a parches y tests en segundos. Pipeline multi-agente que explica, corrige y valida vulnerabilidades automáticamente.</p>
+                    <div class="flex gap-3">
+                        <a href="casos/vulpy.html" class="text-primary text-sm font-medium hover:underline">Caso de estudio →</a>
+                        <a href="https://github.com/Migueltejada86/vulpy-ai-sec" target="_blank" class="text-slate-500 text-sm hover:text-white">GitHub</a>
+                    </div>
+                </article>
+
+                <!-- Gendo / Lab Crew -->
+                <article class="project-card cyber card-hover bg-slate-900 border border-slate-800 rounded-2xl p-6" data-category="cyber">
+                    <div class="text-xs font-semibold text-primary mb-3">ORQUESTADOR · LABS</div>
+                    <h3 class="text-xl font-bold mb-3">Gendo / Lab Crew</h3>
+                    <p class="text-slate-400 text-sm mb-6 leading-relaxed">Equipo de agentes que acelera labs de ciberseguridad: recon, análisis y documentación en paralelo bajo un orquestador central.</p>
+                    <div class="flex gap-3">
+                        <a href="casos/gendo.html" class="text-primary text-sm font-medium hover:underline">Caso de estudio →</a>
+                        <a href="https://github.com/Migueltejada86" target="_blank" class="text-slate-500 text-sm hover:text-white">GitHub</a>
+                    </div>
+                </article>
+
+                <!-- ULTRON -->
+                <article class="project-card ai card-hover bg-slate-900 border border-slate-800 rounded-2xl p-6" data-category="ai">
+                    <div class="text-xs font-semibold text-primary mb-3">ORQUESTADOR IA</div>
+                    <h3 class="text-xl font-bold mb-3">ULTRON</h3>
+                    <p class="text-slate-400 text-sm mb-6 leading-relaxed">Orquestador que coordina agentes especializados para tareas complejas. Más robusto y escalable que un solo LLM.</p>
+                    <div class="flex gap-3">
+                        <a href="casos/ultron.html" class="text-primary text-sm font-medium hover:underline">Caso de estudio →</a>
+                        <a href="https://github.com/Migueltejada86" target="_blank" class="text-slate-500 text-sm hover:text-white">GitHub</a>
+                    </div>
+                </article>
+
+                <!-- ASGARD -->
+                <article class="project-card web card-hover bg-slate-900 border border-slate-800 rounded-2xl p-6" data-category="web">
+                    <div class="text-xs font-semibold text-primary mb-3">PRODUCTO · FULL STACK</div>
+                    <h3 class="text-xl font-bold mb-3">ASGARD ESTUDIO</h3>
+                    <p class="text-slate-400 text-sm mb-6 leading-relaxed">De papel y capturas a sistema real: landing + puntos por DNI + canje con código. Auth, Postgres y deploy pensado para un local que no paga hosting.</p>
+                    <div class="flex gap-3">
+                        <a href="https://migueltejada86.github.io/asgard-estudio/" target="_blank" class="text-primary text-sm font-medium hover:underline">Live</a>
+                        <a href="https://github.com/Migueltejada86/asgard-estudio" target="_blank" class="text-slate-500 text-sm hover:text-white">GitHub</a>
+                    </div>
+                </article>
+
+                <!-- Movie RAG -->
+                <article class="project-card ai card-hover bg-slate-900 border border-slate-800 rounded-2xl p-6" data-category="ai">
+                    <div class="text-xs font-semibold text-primary mb-3">RAG · AGENTE</div>
+                    <h3 class="text-xl font-bold mb-3">AI Movie Recommender</h3>
+                    <p class="text-slate-400 text-sm mb-6 leading-relaxed">Recomendaciones por significado, no por keywords. RAG + agente que entiende “algo filosófico y oscuro” y trae películas relevantes.</p>
+                    <div class="flex gap-3">
+                        <a href="https://ai-movie-recommender-rag-migue.streamlit.app" target="_blank" class="text-primary text-sm font-medium hover:underline">Demo</a>
+                        <a href="https://github.com/Migueltejada86/ai-movie-recommender-rag" target="_blank" class="text-slate-500 text-sm hover:text-white">GitHub</a>
+                    </div>
+                </article>
+
+                <!-- HTB -->
+                <article class="project-card cyber card-hover bg-slate-900 border border-slate-800 rounded-2xl p-6" data-category="cyber">
+                    <div class="text-xs font-semibold text-primary mb-3">PRACTICE · PENTEST</div>
+                    <h3 class="text-xl font-bold mb-3">HTB Labs</h3>
+                    <p class="text-slate-400 text-sm mb-6 leading-relaxed">Práctica estructurada de pentesting. Writeups claros que documentan el proceso real: recon → exploit → privilegios.</p>
+                    <div class="flex gap-3">
+                        <a href="https://github.com/Migueltejada86/HTB-Labs" target="_blank" class="text-slate-500 text-sm hover:text-white">GitHub</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Casos de estudio preview -->
+    <section id="casos" class="py-20 px-4 bg-slate-900/50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center">Casos de estudio</h2>
+            <p class="text-center text-slate-400 mb-12 max-w-2xl mx-auto">Estructura problema → solución → impacto. Ideal para reclutadores y clientes.</p>
+            <div class="grid md:grid-cols-3 gap-6">
+                <a href="casos/vulpy.html" class="block bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-primary transition">
+                    <h3 class="font-bold text-lg mb-2">Vulpy — Pipeline AppSec</h3>
+                    <p class="text-slate-400 text-sm">De hallazgos de Semgrep a parches y tests generados automáticamente.</p>
+                </a>
+                <a href="casos/gendo.html" class="block bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-primary transition">
+                    <h3 class="font-bold text-lg mb-2">Gendo / Lab Crew</h3>
+                    <p class="text-slate-400 text-sm">Orquestación multi-agente para entornos de laboratorio de ciberseguridad.</p>
+                </a>
+                <a href="casos/ultron.html" class="block bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-primary transition">
+                    <h3 class="font-bold text-lg mb-2">ULTRON</h3>
+                    <p class="text-slate-400 text-sm">Orquestador de agentes IA para tareas complejas y automatización.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stack -->
+    <section id="stack" class="py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">Stack & Habilidades</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6">
+                    <h3 class="font-semibold text-lg mb-4 text-primary">IA & Agentes</h3>
+                    <ul class="space-y-2 text-slate-300 text-sm">
+                        <li>LangChain / LangGraph</li>
+                        <li>CrewAI / Multi-agent</li>
+                        <li>RAG (Chroma, embeddings)</li>
+                        <li>OpenAI / GPT-4</li>
+                        <li>n8n</li>
+                    </ul>
+                </div>
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6">
+                    <h3 class="font-semibold text-lg mb-4 text-primary">Cybersecurity</h3>
+                    <ul class="space-y-2 text-slate-300 text-sm">
+                        <li>Semgrep / SAST</li>
+                        <li>OWASP Top 10 / ASVS</li>
+                        <li>MITRE ATT&CK</li>
+                        <li>HTB / Kali / Burp</li>
+                        <li>Threat Hunting</li>
+                    </ul>
+                </div>
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6">
+                    <h3 class="font-semibold text-lg mb-4 text-primary">Desarrollo</h3>
+                    <ul class="space-y-2 text-slate-300 text-sm">
+                        <li>Python (principal)</li>
+                        <li>HTML/CSS/JS + Tailwind</li>
+                        <li>Postgres / Neon</li>
+                        <li>Better Auth / TanStack</li>
+                        <li>Vercel / GitHub Pages</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="py-20 px-4 bg-slate-900/50">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Contacto</h2>
+            <p class="text-slate-400 mb-10 text-lg">Abierto a proyectos freelance, colaboraciones y conversaciones sobre roles de ciberseguridad y IA.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+                <a href="mailto:migueltejada.86.arg@gmail.com" class="bg-primary hover:bg-sky-600 px-8 py-4 rounded-xl font-semibold transition">Email</a>
+                <a href="https://linkedin.com/in/migueltejada86" target="_blank" class="border border-slate-700 hover:border-primary px-8 py-4 rounded-xl font-semibold transition">LinkedIn</a>
+                <a href="https://wa.me/5493547604733" target="_blank" class="border border-slate-700 hover:border-primary px-8 py-4 rounded-xl font-semibold transition">WhatsApp</a>
+            </div>
+            <div class="flex justify-center gap-8 text-sm text-slate-500">
+                <a href="https://github.com/Migueltejada86" target="_blank" class="hover:text-primary">GitHub</a>
+                <a href="https://migueltejada86.github.io/portfolio-cv/" target="_blank" class="hover:text-primary">CV detallado</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="border-t border-slate-800 py-8 text-center text-sm text-slate-500">
+        <p>© 2026 Miguel Angel Tejada. Hecho con Python, agentes y café.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
