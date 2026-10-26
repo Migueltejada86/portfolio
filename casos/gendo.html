@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gendo / Lab Crew — Caso de estudio | Miguel Tejada</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>body { font-family: 'Inter', system_ui, sans-serif; }</style>
+</head>
+<body class="bg-slate-950 text-slate-100">
+    <nav class="border-b border-slate-800">
+        <div class="max-w-4xl mx-auto px-4 py-4">
+            <a href="../index.html" class="text-primary hover:underline">← Volver al portafolio</a>
+        </div>
+    </nav>
+
+    <article class="max-w-4xl mx-auto px-4 py-16">
+        <p class="text-primary text-sm font-semibold mb-2">CASO DE ESTUDIO · ORQUESTADOR</p>
+        <h1 class="text-4xl md:text-5xl font-bold mb-6">Gendo / Lab Crew</h1>
+        <p class="text-xl text-slate-400 mb-12">Orquestador multi-agente de ciberseguridad diseñado para entornos de laboratorio y práctica ofensiva.</p>
+
+        <div>
+            <h2 class="text-2xl font-bold mt-10 mb-4">Problema</h2>
+            <p class="text-slate-300 leading-relaxed mb-6">
+                En labs de ciberseguridad (HTB, entornos internos, CTFs) el trabajo es repetitivo: enumeración, análisis de resultados, priorización de vectores y documentación. Un solo operador no escala. Se necesita un equipo de agentes especializados que trabajen en paralelo bajo un orquestador.
+            </p>
+
+            <h2 class="text-2xl font-bold mt-10 mb-4">Solución</h2>
+            <p class="text-slate-300 leading-relaxed mb-6">
+                Gendo / Lab Crew coordina agentes con roles definidos:
+            </p>
+            <ul class="list-disc list-inside text-slate-300 space-y-2 mb-6">
+                <li>Agente de Recon (Nmap, enumeración de servicios)</li>
+                <li>Agente de Análisis de vulnerabilidades</li>
+                <li>Agente de Explotación (en entornos controlados)</li>
+                <li>Agente de Documentación / Writeup</li>
+            </ul>
+            <p class="text-slate-300 leading-relaxed mb-6">
+                El orquestador asigna tareas, mantiene contexto compartido y genera reportes estructurados.
+            </p>
+
+            <h2 class="text-2xl font-bold mt-10 mb-4">Impacto</h2>
+            <ul class="list-disc list-inside text-slate-300 space-y-2 mb-8">
+                <li>Acelera la fase de reconocimiento y priorización en labs.</li>
+                <li>Genera documentación consistente automáticamente.</li>
+                <li>Sirve como base para herramientas de red team / blue team asistidas por agentes.</li>
+                <li>Alineado con el objetivo de evolucionar hacia roles de CISO con visión de automatización.</li>
+            </ul>
+
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 mt-10">
+                <p class="text-slate-400 text-sm">Proyecto en desarrollo activo. Repositorio y demos disponibles bajo solicitud o próximamente públicos.</p>
+            </div>
+        </div>
+    </article>
+</body>
+</html>

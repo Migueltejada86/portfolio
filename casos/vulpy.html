@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vulpy — Caso de estudio | Miguel Tejada</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>body { font-family: 'Inter', system_ui, sans-serif; }</style>
+</head>
+<body class="bg-slate-950 text-slate-100">
+    <nav class="border-b border-slate-800">
+        <div class="max-w-4xl mx-auto px-4 py-4">
+            <a href="../index.html" class="text-primary hover:underline">← Volver al portafolio</a>
+        </div>
+    </nav>
+
+    <article class="max-w-4xl mx-auto px-4 py-16">
+        <p class="text-primary text-sm font-semibold mb-2">CASO DE ESTUDIO · APPSEC</p>
+        <h1 class="text-4xl md:text-5xl font-bold mb-6">Vulpy</h1>
+        <p class="text-xl text-slate-400 mb-12">Pipeline multi-agente de AppSec que genera parches a partir de hallazgos de SAST.</p>
+
+        <div class="prose prose-invert max-w-none">
+            <h2 class="text-2xl font-bold mt-10 mb-4">Problema</h2>
+            <p class="text-slate-300 leading-relaxed mb-6">
+                Los desarrolladores y equipos pequeños pierden tiempo revisando hallazgos de herramientas SAST. Semgrep detecta vulnerabilidades, pero no explica el impacto en lenguaje claro, no genera el parche y no propone tests de regresión. El resultado: deuda de seguridad que se acumula.
+            </p>
+
+            <h2 class="text-2xl font-bold mt-10 mb-4">Solución</h2>
+            <p class="text-slate-300 leading-relaxed mb-6">
+                Vulpy orquesta 4 agentes:
+            </p>
+            <ul class="list-disc list-inside text-slate-300 space-y-2 mb-6">
+                <li><strong>Detector</strong>: ejecuta Semgrep sobre el código.</li>
+                <li><strong>Explainer</strong>: usa GPT-4 para explicar la vulnerabilidad con contexto OWASP/CWE en español.</li>
+                <li><strong>Patcher</strong>: genera un parche en formato diff.</li>
+                <li><strong>Tester</strong>: propone tests pytest para validar el fix.</li>
+            </ul>
+            <p class="text-slate-300 leading-relaxed mb-6">
+                El flujo es end-to-end: del hallazgo al parche listo para revisar.
+            </p>
+
+            <h2 class="text-2xl font-bold mt-10 mb-4">Stack</h2>
+            <div class="flex flex-wrap gap-2 mb-8">
+                <span class="bg-slate-800 px-3 py-1 rounded-full text-sm">Python</span>
+                <span class="bg-slate-800 px-3 py-1 rounded-full text-sm">Semgrep</span>
+                <span class="bg-slate-800 px-3 py-1 rounded-full text-sm">OpenAI GPT-4</span>
+                <span class="bg-slate-800 px-3 py-1 rounded-full text-sm">pytest</span>
+                <span class="bg-slate-800 px-3 py-1 rounded-full text-sm">OWASP / CWE</span>
+            </div>
+
+            <h2 class="text-2xl font-bold mt-10 mb-4">Impacto</h2>
+            <ul class="list-disc list-inside text-slate-300 space-y-2 mb-8">
+                <li>Reduce el tiempo de triaje de hallazgos de minutos a segundos.</li>
+                <li>Genera parches y tests accionables en lugar de solo alertas.</li>
+                <li>Documentación y explicación en español, pensada para equipos locales.</li>
+                <li>Base para integrar como gate de seguridad en CI/CD (roadmap v2).</li>
+            </ul>
+
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 mt-10">
+                <h3 class="font-semibold mb-3">Links</h3>
+                <a href="https://github.com/Migueltejada86/vulpy-ai-sec" target="_blank" class="text-primary hover:underline">Repositorio en GitHub →</a>
+            </div>
+        </div>
+    </article>
+</body>
+</html>
